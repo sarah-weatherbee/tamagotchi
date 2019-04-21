@@ -1,10 +1,38 @@
+@import './colors';
+
 body {
-  background-color: aqua;
+  background-color: $background;
+  font-family: 'Roboto Slab', serif;
 }
-.card{
-  width: 500px;
-  margin: 0 auto;
+.eat-card {
+  width: 450px;
+  margin: 15px 15px 15px 15px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: $eat;
 }
+.fight-card {
+  width: 450px;
+  margin: 15px 15px 15px 15px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: $fight;
+}
+.play-card {
+  width: 450px;
+  margin: 15px 15px 15px 15px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: $play;
+}
+.sleep-card {
+  width: 450px;
+  margin: 15px 15px 15px 15px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: $sleep;
+}
+
 #app {
   display: flex;
   flex-flow: row wrap;
@@ -13,15 +41,33 @@ body {
   justify-content: center;
 }
 
-#pet{
-margin:0 auto;
-display:flex;
+#pet {
+margin: 15px 15px 15px;
+
 }
 .vladimir {
-  margin: auto;
-  img {
-    width: 50px;
-    
-  }
+  flex-flow: row;
+  align-items: center;
+  align-self: center;
+  float: right;
+  text-align: center;
   
 }
+.putin {
+    width: 200px;
+    border-radius: 10px; 
+}
+
+.button {
+  background-color:$background; 
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  align-self: center;
+  font-size: 14px;
+}
+
+

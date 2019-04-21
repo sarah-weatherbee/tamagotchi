@@ -1,2 +1,8 @@
 @import '../../../styles/_variables';
 @import '../../../styles/_colors';
+
+
+#fight {
+  display: flex;
+  flex-flow: row wrap;
+};

@@ -22,14 +22,17 @@ const eatFreedomFries = () => {
 
 const eatStringBuilder = () => {
   let domString = '';
-  // do I need a forEach loop if I'm just building the eat quadrant here?
-  domString += '<div class="card">';
+  domString += '<div class="eat-card">';
   domString += '<h3>Eat</h3>';
-  domString += '<h4>Strength:</h4>';
+  domString += '<h4>Full:</h4>';
   domString += '<div id="fullScore">100</div>';
-  domString += '<button type ="button" id="healthy">Borscht</button>';
-  domString += '<button type ="button" id="unhealthy">Freedom Fries</button>';
+  domString += '<button type="button" class="button" id="healthy">Eat borscht</button>';
+  domString += '<button type="button" class="button" id="unhealthy">Eat freedom fries</button>';
   domString += '</div>';
+  domString += '<div class= "vladimir">';
+  domString += '<h3>Vladimir</h3> <img class="putin" src="https://img.gifmagazine.net/gifmagazine/images/1234681/original.gif">';
+  domString += '</div>';
+
   util.printToDom('eat', domString);
   document.getElementById('healthy').addEventListener('click', eatBorscht);
   document.getElementById('unhealthy').addEventListener('click', eatFreedomFries);

@@ -1,3 +1,10 @@
 import '../styles/main.scss';
+import vladimir from './components/vladimir';
+import pictureBuilder from './components/pet';
 
-console.error('hi');
+const init = () => {
+  vladimir.makeVladimir();
+  pictureBuilder.pictureBuilder();
+};
+
+init();

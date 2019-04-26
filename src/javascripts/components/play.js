@@ -26,7 +26,7 @@ const funStringBuilder = () => {
   let domString = '';
   domString += '<div class="play-card">';
   domString += '<h3>Play</h3>';
-  domString += '<h4>Fun:</h4>';
+  domString += '<h4>Fun Score:</h4>';
   domString += '<div id="funScore">50</div>';
   domString += '<button type="button" class="button" id="slightlyFun">Make troll bots</button>';
   domString += '<button type="button" class="button" id="veryFun">Hack election</button>';

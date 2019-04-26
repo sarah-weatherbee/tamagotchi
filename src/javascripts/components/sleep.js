@@ -26,7 +26,7 @@ const sleepStringBuilder = () => {
   let domString = '';
   domString += '<div class="sleep-card">';
   domString += '<h3>Sleep</h3>';
-  domString += '<h4>Energy:</h4>';
+  domString += '<h4>Energy score:</h4>';
   domString += '<div id="sleepScore">50</div>';
   domString += '<button type ="button" class="button" id="nap">Sleeping</button>';
   domString += '<button type ="button" class="button" id="deepSleep">Sleeping forever</button>';

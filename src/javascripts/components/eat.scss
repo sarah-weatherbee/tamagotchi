@@ -1,9 +1,32 @@
-@import '../../../styles/_variables';
-@import '../../../styles/_colors';
+
 
 #eat {
   display: flex;
   flex-flow: row wrap;
-};
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 100%;
+  display: inline;
+}
+
+.score-info {
+  align-self: center;
+}
+
+#fullScore {
+  display: inline-block;
+}
 
 
+.button {
+  margin-bottom: 0px;
+  padding: 10px;
+}

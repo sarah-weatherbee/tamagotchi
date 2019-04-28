@@ -1,5 +1,6 @@
 import util from '../helpers/util';
-// import './eat.scss';
+
+import './eat.scss';
 
 let full = 100;
 
@@ -8,7 +9,6 @@ const eatBorscht = () => {
   if (full > 100) {
     full = 100;
   }
-  console.error('hi', full);
   util.printToDom('fullScore', full);
 };
 
@@ -23,14 +23,14 @@ const eatFreedomFries = () => {
 const eatStringBuilder = () => {
   let domString = '';
   domString += '<div class="eat-card">';
-  domString += '<h3>Eat</h3>';
-  domString += '<h4>Full:</h4>';
-  domString += '<div id="fullScore">100</div>';
+  domString += '<h3>Eat Score</h3>';
+  domString += '<div class="score-info">';
+  domString += '<div id="fullScore"><h3>100</h3></div>';
+  domString += '</div>';
+  domString += '<div class="button-wrap">';
   domString += '<button type="button" class="button" id="healthy">Eat borscht</button>';
   domString += '<button type="button" class="button" id="unhealthy">Eat freedom fries</button>';
   domString += '</div>';
-  domString += '<div class= "vladimir">';
-  domString += '<h3>Vladimir</h3> <img class="putin" src="https://img.gifmagazine.net/gifmagazine/images/1234681/original.gif">';
   domString += '</div>';
 
   util.printToDom('eat', domString);

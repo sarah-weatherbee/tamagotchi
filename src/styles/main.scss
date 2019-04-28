@@ -1,36 +1,46 @@
-@import './colors';
+@import './_colors';
+@import './_variables';
+
 
 body {
   background-color: $background;
   font-family: 'Roboto Slab', serif;
 }
 .eat-card {
-  width: 450px;
+  width: 330px;
   margin: 15px 15px 15px 15px;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
   background-color: $eat;
+  display: flex;
+  flex-direction: column;
 }
 .fight-card {
-  width: 450px;
+  width: 330px;
   margin: 15px 15px 15px 15px;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
   background-color: $fight;
+  display: flex;
+  flex-direction: column;
 }
 .play-card {
-  width: 450px;
+  width: 330px;
   margin: 15px 15px 15px 15px;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
   background-color: $play;
+  display: flex;
+  flex-direction: column;
 }
 .sleep-card {
-  width: 450px;
+  width: 330px;
   margin: 15px 15px 15px 15px;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
   background-color: $sleep;
+  display: flex;
+  flex-direction: column;
 }
 
 #app {
@@ -42,15 +52,17 @@ body {
 }
 
 #pet {
-margin: 15px 15px 15px;
+margin-top: 5px;
+padding-top: 5px;
+width: 100%;
 
 }
 .vladimir {
   flex-flow: row;
   align-items: center;
   align-self: center;
-  float: right;
   text-align: center;
+  margin-top: 0px;
   
 }
 .putin {
@@ -59,15 +71,54 @@ margin: 15px 15px 15px;
 }
 
 .button {
-  background-color:$background; 
+  background-color: rgb(139, 226, 139); 
   border: none;
   border-radius: 10px;
   margin: 10px;
   padding: 15px 15px;
   text-align: center;
   text-decoration: none;
-  align-self: center;
+  
   font-size: 14px;
 }
 
+.eat-card {
+  align-content: center;
+}
 
+.fight-card {
+  align-content: center;
+}
+
+.play-card {
+  align-content: center;
+}
+
+.sleep-card {
+  align-content: center;
+}
+
+#fullScore {
+  font-weight: bold;
+}
+#funScore {
+  font-weight: bold;
+}
+#strengthScore {
+  font-weight: bold;
+}
+
+#sleepScore {
+  font-weight: bold;
+}
+
+.button-wrap {
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+h3 {
+  margin-top: 5px;
+}

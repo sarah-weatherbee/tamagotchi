@@ -25,12 +25,16 @@ const occupyNeighbor = () => {
 const fightStringBuilder = () => {
   let domString = '';
   domString += '<div class="fight-card">';
-  domString += '<h3>Fight</h3>';
-  domString += '<h4>Strength score:</h4>';
-  domString += '<div id="strengthScore"><strong>100</strong></div>';
-  domString += '<button type="button" class="button" id="runAway">Practice restraint</button>';
-  domString += '<button type="button" class="button" id="occupy">Invade neighboring country</button>';
+  domString += '<h3>Fight Score</h3>';
+  domString += '<div class="score-info">';
+  domString += '<div id="strengthScore"><h3>100</h3></div>';
   domString += '</div>';
+  domString += '<div class="button-wrap">';
+  domString += '<button type="button" class="button" id="runAway">Practice restraint</button>';
+  domString += '<button type="button" class="button" id="occupy">Invade neighbor</button>';
+  domString += '</div>';
+  domString += '</div>';
+
   util.printToDom('fight', domString);
   document.getElementById('runAway').addEventListener('click', runAway);
   document.getElementById('occupy').addEventListener('click', occupyNeighbor);

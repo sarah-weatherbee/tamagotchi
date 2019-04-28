@@ -25,12 +25,16 @@ const hackElection = () => {
 const funStringBuilder = () => {
   let domString = '';
   domString += '<div class="play-card">';
-  domString += '<h3>Play</h3>';
-  domString += '<h4>Fun Score:</h4>';
-  domString += '<div id="funScore">50</div>';
+  domString += '<h3>Play Score</h3>';
+  domString += '<div class="score-info">';
+  domString += '<div id="funScore"><h3>50</h3></div>';
+  domString += '</div>';
+  domString += '<div class="button-wrap">';
   domString += '<button type="button" class="button" id="slightlyFun">Make troll bots</button>';
   domString += '<button type="button" class="button" id="veryFun">Hack election</button>';
   domString += '</div>';
+  domString += '</div>';
+
   util.printToDom('play', domString);
   document.getElementById('slightlyFun').addEventListener('click', trollBots);
   document.getElementById('veryFun').addEventListener('click', hackElection);

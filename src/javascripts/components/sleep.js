@@ -25,12 +25,16 @@ const deepSlumber = () => {
 const sleepStringBuilder = () => {
   let domString = '';
   domString += '<div class="sleep-card">';
-  domString += '<h3>Sleep</h3>';
-  domString += '<h4>Energy score:</h4>';
-  domString += '<div id="sleepScore">50</div>';
-  domString += '<button type ="button" class="button" id="nap">Sleeping</button>';
-  domString += '<button type ="button" class="button" id="deepSleep">Sleeping forever</button>';
+  domString += '<h3>Sleep Score</h3>';
+  domString += '<div class="score-info">';
+  domString += '<div id="sleepScore"><h3>50</h3></div>';
   domString += '</div>';
+  domString += '<div class="button-wrap">';
+  domString += '<button type ="button" class="button" id="nap">Sleep is for the weak</button>';
+  domString += '<button type ="button" class="button" id="deepSleep">Cannot wake up</button>';
+  domString += '</div>';
+  domString += '</div>';
+
   util.printToDom('sleep', domString);
   document.getElementById('nap').addEventListener('click', nap);
   document.getElementById('deepSleep').addEventListener('click', deepSlumber);
